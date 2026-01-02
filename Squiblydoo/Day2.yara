@@ -5,8 +5,8 @@ rule darkmode_delphi_dib : suspicious {
         description = "YARA rule detects on a default darkmode icon included in apps built with Delphi. This default icon is used with a large amount of malware and 'cracked software' installers as the default desktop icon."
         author      = "SquiblydooBlog"
         created     = "2026-01-02"
-        reliability = 70
-        tlp         = "TLP:amber"
+        reliability = 100
+        tlp         = "TLP:clear"
         sample      = "8a6952a09533f1da238681c5f8823493ccd5d05f1c7877a232bf05cb0bac7584"
 
     strings:
