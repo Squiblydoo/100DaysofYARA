@@ -1,6 +1,6 @@
 rule trashagent_process_list_check : malware {
     meta:
-        name        = "separator"
+        name        = "trashagent_process_list_check"
         category    = "evasion"
         description = "TrashAgent malware contains a hardcoded list of processes to check for on a system. It identifies the list and then separates the list before querying for the running processes. The processes are mostly enterprise or chat applications. This only detects a subset of TrashAgent. The detected version uses mscvrt but the version using vcruntime140 is not covered in this rule."
         author      = "SquiblydooBlog"
